@@ -26,7 +26,7 @@ html {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 3rem;
   border-bottom: 0.3rem solid #333;
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
@@ -267,7 +267,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 3rem;
   background-color: #fff;
   box-shadow: 0.3rem 0.3rem 0.5rem #777;
   position: relative;
@@ -348,7 +348,7 @@ html {
   color: #fff;
   box-shadow: none;
   border-color: #fff;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .contact-form {

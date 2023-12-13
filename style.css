@@ -43,7 +43,7 @@ html {
     url(images/bg1.jpg) center no-repeat;
   background-size: cover;
   flex-direction: column;
-  padding: 0px 0px 20px;
+  padding: 0 0 20px;
 }
 
 .section-1-heading {

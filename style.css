@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: 4rem; /* match .navbar height */
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -112,7 +116,10 @@ html {
   height: 4rem;
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
-  position: absolute;
+  position: fixed; /* changed: keep navbar at top and out of flow */
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 300;
 }
 
@@ -160,11 +167,56 @@ html {
 }
 /* End of Navbar */
 
+/* Badges */
+.badges {
+  clear: both;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 1.5rem; /* extra space below Section 1 */
+  z-index: 1;
+}
+.badges .section-heading {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+.badges-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.badges-wrapper a {
+  display: inline-block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-radius: 6px;
+  overflow: hidden;
+  background: transparent;
+}
+.badges-wrapper a img {
+  height: 160px;    /* increase this value to make badges larger */
+  width: auto;
+  display: block;
+  padding: 6px;
+  max-width: 220px; /* optional limit */
+}
+.badges-wrapper a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+@media (max-width: 480px) {
+  .badges-wrapper a img {
+    height: 64px;   /* smaller on phones */
+  }
+}
+/* End of Badges */
+
+
 /* Section 2 */
 .section-2 {
   width: 100%;
   height: 100%;
-  padding: 10rem 0 0 0;
+  padding: 5rem 0 0 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -333,6 +385,7 @@ html {
   transition: bottom 0.3s 0.3s;
 }
 /* End of Section 3 */
+
 
 /* Section 4 */
 .section-4 {

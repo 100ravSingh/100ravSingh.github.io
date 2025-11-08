@@ -172,8 +172,9 @@ body {
   clear: both;
   padding: 2rem 1rem;
   text-align: center;
-  margin-top: 1.5rem; /* extra space below Section 1 */
+  margin-top: 0.5rem; /* extra space below Section 1 */
   z-index: 1;
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent background */
 }
 .badges .section-heading {
   margin-bottom: 0.75rem;
@@ -216,7 +217,7 @@ body {
 .section-2 {
   width: 100%;
   height: 100%;
-  padding: 5rem 0 0 0;
+  padding: 2rem 0 0 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
